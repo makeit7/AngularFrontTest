@@ -1,0 +1,38 @@
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Test task</h1>
+</div>
+<nav class="navbar bg-dark navbar-dark d-flex flex-row-reverse">
+  <div>
+    <form *ngIf="formLogin" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <div class="form-group row">
+
+        <div style="display: -ms-flexbox; /* IE10 */ display: flex; width: 170px;height:30px; margin-bottom: 15px;">
+          <i id="icon" style="color:black;marginTop:2px; background-color:white" class="fa fa-user fa-2x cust" ></i>
+          <input type="login" formControlName='login' id="login" style="marginTop:2px; height:20px; width: 145px; padding: 10px; outline: none; border:2px solid white" type="text/css" placeholder="Enter User Name" name="psw" required>
+        </div>
+
+        <div style="display: -ms-flexbox; /* IE10 */ display: flex; width: 170px; height:30px; margin-bottom: 15px;">
+          <i id="icon" style="color:black;marginTop:2px;padding-top: 2px;background-color:white" class="fa fa-lock fa-2x cust" ></i>
+          <input type="password" formControlName='password' id="password" style=" float:right;marginTop:2px; border:2px solid white;height:20px; width: 145px; padding: 10px; outline: none;" type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <br/>
+        <button style="float:right; background-color:red; color:white; border-radius:10px; height:30px; width: 100px; margin-right:5px" class="btn btn-primary btn-sm pull-right" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>XSENIO INC</h2>
+      <p>
+        XSENIO INC — это независимый разработчик. Мы специализируемся на создании мульти-платформенных игр и приложений, для глобальной аудитории.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>October 2019</p>
+</div>
